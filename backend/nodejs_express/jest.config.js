@@ -7,4 +7,5 @@ module.exports = {
   clearMocks: true,
   // Reportes que configuraremos en el Punto 10
   reporters: ['default'],
+  maxWorkers: 1,
 };

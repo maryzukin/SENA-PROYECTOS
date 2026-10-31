@@ -3,7 +3,7 @@
 Cypress.Commands.add('login', (email, password) => {
   cy.request({
     method: 'POST',
-    url: 'http://192.168.78.145:3000/api/users/login', // Asegúrese de que su backend corra aquí
+    url: 'http://192.168.0.7:3000/api/users/login', // Asegúrese de que su backend corra aquí
     body: { email, password },
   }).then((response) => {
     expect(response.status).to.eq(201);
